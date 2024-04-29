@@ -29,4 +29,23 @@ public class TestValidationUtil {
             // NOP
         }
     }
+
+    @Test
+    public void testvalidateLength() throws Exception{
+        String validString = "MyValidString";
+        String result = ValidationUtil.validateLength(validString, "TestString", 5, 15, false);
+        Assert.assertEquals(validString, result);
+
+        String emptyString = "";
+        result = ValidationUtil.validateLength(emptyString, "TestString", 5, 15, true);
+        Assert.assertEquals("", result);
+
+        try {
+            ValidationUtil.validateLength(emptyString, "TestString", 5, 15, false);
+            Assert.fail();
+        } catch (ClientException e) {
+            // NOP
+        }
+
+    }
 }

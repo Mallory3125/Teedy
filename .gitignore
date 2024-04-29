@@ -6,6 +6,9 @@
 /*/target
 /*/build
 /out
+/target
+/lab8_jacoco
+/javdoc
 /.idea
 /.project
 *.iml

@@ -226,6 +226,11 @@
       <artifactId>h2</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>6.1.4</version>
+    </dependency>
   </dependencies>
   
   <profiles>

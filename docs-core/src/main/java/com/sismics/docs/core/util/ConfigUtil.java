@@ -34,7 +34,7 @@ public class ConfigUtil {
      * @return Resource bundle
      */
     public static ResourceBundle getConfigBundle() {
-        return ResourceBundle.getBundle("config");
+        return ResourceBundle.getBundle("com/sismics/docs/rest/config");
     }
 
     /**
